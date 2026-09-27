@@ -168,7 +168,7 @@ def load_settings(path: str | os.PathLike[str]) -> UISettings:
         or DEFAULT_SETTINGS.video_gpu_uuid,
         nr_style=choice("nr_style", tuple(NR_STYLES), DEFAULT_SETTINGS.nr_style),
         nr_intensity=number("nr_intensity", 0.0, 2.0, DEFAULT_SETTINGS.nr_intensity),
-        nr_passes=integer("nr_passes", 1, 4, DEFAULT_SETTINGS.nr_passes),
+        nr_passes=integer("nr_passes", 1, 8, DEFAULT_SETTINGS.nr_passes),
         local_tone_strength=number(
             "local_tone_strength", 0.0, 2.0, DEFAULT_SETTINGS.local_tone_strength
         ),
@@ -297,7 +297,7 @@ def load_settings(path: str | os.PathLike[str]) -> UISettings:
         settings,
         live_nr_style=choice("live_nr_style", tuple(NR_STYLES), settings.nr_style),
         live_nr_intensity=number("live_nr_intensity", 0.0, 2.0, settings.nr_intensity),
-        live_nr_passes=integer("live_nr_passes", 1, 4, settings.nr_passes),
+        live_nr_passes=integer("live_nr_passes", 1, 8, settings.nr_passes),
         live_local_tone_strength=number(
             "live_local_tone_strength", 0.0, 2.0, settings.local_tone_strength
         ),

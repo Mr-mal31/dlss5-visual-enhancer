@@ -38,7 +38,7 @@ Column {
         width: parent.width
         label: "NR Passes"
         from: 1
-        to: 4
+        to: 8
         stepSize: 1
         precision: 0
         defaultValue: 1

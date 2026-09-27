@@ -517,7 +517,7 @@ Item {
                                     onValueModified: (v) => { if (appBridge) appBridge.liveLocalStructureStrength = v }
                                 }
 
-                                AppSlider { width: parent.width; label: "NR Passes"; from: 1; to: 4; stepSize: 1; precision: 0; defaultValue: 1; value: appBridge ? appBridge.liveNrPasses : 1; onValueModified: (v) => { if (appBridge) appBridge.liveNrPasses = Math.round(v) } }
+                                AppSlider { width: parent.width; label: "NR Passes"; from: 1; to: 8; stepSize: 1; precision: 0; defaultValue: 1; value: appBridge ? appBridge.liveNrPasses : 1; onValueModified: (v) => { if (appBridge) appBridge.liveNrPasses = Math.round(v) } }
                                 AppSlider { width: parent.width; label: "Skin Structure"; from: -1; to: 2; stepSize: 0.05; defaultValue: -1; value: appBridge ? appBridge.liveSkinStructureStrength : -1; onValueModified: (v) => { if (appBridge) appBridge.liveSkinStructureStrength = v } }
                                 AppSwitch { label: "Automatic Mask"; checked: appBridge ? appBridge.liveAutomaticMask : false; onToggled: (v) => { if (appBridge) appBridge.liveAutomaticMask = v } }
                                 AppSlider { width: parent.width; label: "Color Strength"; from: 0; to: 1; stepSize: 0.05; defaultValue: 1; value: appBridge ? appBridge.liveNrColorStrength : 1; onValueModified: (v) => { if (appBridge) appBridge.liveNrColorStrength = v } }

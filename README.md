@@ -36,7 +36,7 @@ The **Neural Rendering** workspace provides separate **Image** and **Video** pip
 
 - **Neuroframe Engine:** brings DLSS 5 Neural Rendering to images and videos directly inside Visual Enhancer. No external graphics injector or game add-on is required.
 - **Image and video processing:** use Neural Rendering as one stage in a larger workflow, on single files or batches.
-- **Neural Rendering controls:** NR Style, NR Intensity, Local Tone Strength, Local Structure Strength, Skin Structure Strength, Automatic Mask, and 1–4 Neural Rendering passes.
+- **Neural Rendering controls:** NR Style, NR Intensity, Local Tone Strength, Local Structure Strength, Skin Structure Strength, Automatic Mask, and 1–8 Neural Rendering passes.
 - **Composition controls:** NR Color Strength, Tone Preservation, Face/Skin Protection, Grain Preservation, and Mask Feather control how Neural Rendering is blended with the source.
 - **Detail-Only:** one-click preset that sets NR Color Strength to `0.00` and Tone Preservation to `1.00` while keeping the other controls editable.
 - **Custom NR Mask:** use an image mask to control where Neural Rendering is applied. The selected mask is also available to Live during the current application session.
@@ -135,7 +135,7 @@ Stages execute **top to bottom** in their displayed order. Preflight checks dime
 | --- | --- | --- |
 | NR Style | Default, Natural, Cinematic | Default |
 | NR Intensity | 0.00–2.00 | 1.00 |
-| NR Passes | 1–4 | 1 |
+| NR Passes | 1–8 | 1 |
 | Local Tone Strength | 0.00–2.00 | 1.00 |
 | Local Structure Strength | 0.00–2.00 | 1.00 |
 | Skin Structure Strength | -1.00–2.00 | -1.00 |

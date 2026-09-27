@@ -373,13 +373,13 @@ def _validate(settings: UISettings) -> UISettings:
             raise ValueError(f"{label} selection must be Automatic or a valid GPU UUID.")
     resolve_native_settings(settings)
     if isinstance(settings.nr_passes, bool) or not isinstance(settings.nr_passes, int):
-        raise ValueError("NR Passes must be an integer from 1 to 4.")
-    if not 1 <= settings.nr_passes <= 4:
-        raise ValueError("NR Passes must be between 1 and 4.")
+        raise ValueError("NR Passes must be an integer from 1 to 8.")
+    if not 1 <= settings.nr_passes <= 8:
+        raise ValueError("NR Passes must be between 1 and 8.")
     if isinstance(settings.live_nr_passes, bool) or not isinstance(settings.live_nr_passes, int):
-        raise ValueError("Live NR Passes must be an integer from 1 to 4.")
-    if not 1 <= settings.live_nr_passes <= 4:
-        raise ValueError("Live NR Passes must be between 1 and 4.")
+        raise ValueError("Live NR Passes must be an integer from 1 to 8.")
+    if not 1 <= settings.live_nr_passes <= 8:
+        raise ValueError("Live NR Passes must be between 1 and 8.")
     if isinstance(settings.mask_feather, bool) or not isinstance(settings.mask_feather, int):
         raise ValueError("Mask Feather must be an integer from 0 to 128.")
     if not 0 <= settings.mask_feather <= 128:
