@@ -136,9 +136,9 @@ def resolve_native_settings(options: Any) -> dict[str, int | float | bool]:
     codec_name = str(getattr(options, "codec", ""))
     nr_passes = getattr(options, "nr_passes", 1)
     if isinstance(nr_passes, bool) or not isinstance(nr_passes, int):
-        raise ValueError("NR Passes must be an integer from 1 to 4.")
-    if not 1 <= nr_passes <= 4:
-        raise ValueError("NR Passes must be between 1 and 4.")
+        raise ValueError("NR Passes must be an integer from 1 to 8.")
+    if not 1 <= nr_passes <= 8:
+        raise ValueError("NR Passes must be between 1 and 8.")
 
     # NVOF remains available for adapter/driver validation. On the tested
     # RTX 4060 Ti / 617.14 it was slower and had a higher warped-residual
